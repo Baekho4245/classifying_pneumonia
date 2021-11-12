@@ -1,0 +1,2 @@
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/test/NORMAL/*.jpeg filter=lfs diff=lfs merge=lfs -text

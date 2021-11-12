@@ -1,2 +1,7 @@
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 chest_xray/test/NORMAL/*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/test/PNEUMONIA/*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/train/PNEUMONIA/*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/train/NORMAL/*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/val/NORMAL/*.jpeg filter=lfs diff=lfs merge=lfs -text
+chest_xray/val/PNEUMONIA/*.jpeg filter=lfs diff=lfs merge=lfs -text

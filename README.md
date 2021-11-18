@@ -1,3 +1,4 @@
+![image1](Images/pneumonia_cover.jpg)
 # Classifying Pneumonia
 
 # Overview
@@ -8,10 +9,19 @@ Doctors have many methods to detect the precense of infections but not all are c
 
 A machine learning model that accepts chest x-rays as inputs can be trained to identify patterns of pneumonia and classify patients into two categories: ‘have pneumonia’ or ‘does not have pneumonia
 
-# Data Understanding & Cleaning
+# Data Understanding 
+
+The Chest X-ray images are of pediatric patients one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. The dataset has been pre-screened for quality control and only contains high quality X-rays for the neural network to learn on. All unreadable or low quality images have already been removed. Three expert physicians diagnosed each of the images the categorization of whether a patients X-ray is positive for pneumonia or not.
+
+The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal).\ 5,856 Total X-Ray images (JPEG) and 2 categories (Pneumonia/Normal)\ 3,867 X-Ray images depicting pneumonia\ 1,349 healthy X-Ray images
 
 # Data Preparation
 
+We need to preprocess our data before it can be run through a neural network model.
+
+Start with unrowing the train, validation and test images by reshaping them into an $n$ x $l$ shape.\ This will transform the image shapes from $(xxxx, 500, 500, 3)$ to $(xxxx, 750000)$
+
+Since this is a deep learning model, we want to make sure each pixel value is between 0 and 1. Therefore we divide the entire matrix by 255 for the train_img_unrow,val_img_unrow and test_img_unrow.
 # Modeling
 
 ## 1st Model - Convolutional Neural Network (CNN)
@@ -46,8 +56,6 @@ We seem to have been in underfitting our model, but there is still a large overf
 
 ## 2nd Model - Logistic Regression
 ![graph1](./Images/formula.png)
-
-$$J(w,b) = \dfrac{1}{l}\displaystyle\sum^l_{i=1}\mathcal{L}(\hat y^{(i)}, y^{(i)})$$
 
 1. Initialize the parameters of the model
 

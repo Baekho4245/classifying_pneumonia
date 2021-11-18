@@ -45,11 +45,17 @@ We seem to have been in underfitting our model, but there is still a large overf
 
 
 ## 2nd Model - Logistic Regression
+![graph1](./Images/formula.png)
+
 $$J(w,b) = \dfrac{1}{l}\displaystyle\sum^l_{i=1}\mathcal{L}(\hat y^{(i)}, y^{(i)})$$
- -Initialize the parameters of the model
- -Perform forward propagation, and calculate the current loss
- -Perform backward propagation (which is basically calculating the current gradient)
- -Update the parameters (gradient descent)
+
+1. Initialize the parameters of the model
+
+2. Perform forward propagation, and calculate the current loss
+
+3. Perform backward propagation (which is basically calculating the current gradient)
+
+4. Update the parameters (gradient descent)
 
 
 For our first test, we used 500 iterations with a learning rate of 0.01.

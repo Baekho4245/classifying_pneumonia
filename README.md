@@ -69,6 +69,8 @@ We seem to have been in underfitting our model, but there is still a large overf
 
 For our first test, we used 500 iterations with a learning rate of 0.01.
 
+![image3](Images/code.png)
+
 Metrics:
 
 Train: 95%
@@ -134,9 +136,9 @@ For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble T
 
 ## Repository Structure
 
-You are in the README.md right now. If you want to take a look at our Jupyter Notebook, go to the 'pneumonia_classification.ipynb' to find our data science steps for you to replicate! The 'data' folder contains the train/test/val datasets we used to train and validate our model. The 'images' folder contains the images used within this README. We hope you find our research informative!
+You are in the README.md right now. If you want to take a look at our Jupyter Notebook, go to the 'pneumonia_classification.ipynb' to find our data science steps for you to replicate! The 'data' folder contains the train/test/val datasets we used to train and validate our model. The 'chest_xray' folder contains the images used within this README. We hope you find our research informative!
 ```                              
-├── data
+├── chest_xray
 ├── images
 ├── .gitignore
 ├── pneumonia_classification.ipynb

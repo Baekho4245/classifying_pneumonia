@@ -40,7 +40,7 @@ We set the pool_size = (2, 2) and strides = 2.
 
 The next layer flattens the image, meaning transforming our data into a 1D array, scaling the RGB values.
 
-The first Dense layer is the number of neurons that will predict upon the flattened 1D array. This layer is extremely important as its job is to condense a large amount of information into the number of neurons we defince, in this case '128''. We give it an activation function, 'relu' before adding another Dense layer of size 2 with activation 'sigmoid'.
+The first Dense layer is the number of neurons that will predict upon the flattened 1D array. This layer is extremely important as its job is to condense a large amount of information into the number of neurons we defince, in this case '128'. We give it an activation function, 'relu' before adding another Dense layer of size 2 with activation 'sigmoid'.
 
 Accuracy Metrics:
 
@@ -77,7 +77,7 @@ Train: 95%
 
 Test: 87.5%
 
-With a difference of 7.5%, between our train and test, overfitting is a problem with our model. Lets see if we can reduce that.
+With a difference of 7.5%, between our train and test, overfitting is a problem with our model. Let's see if we can reduce that.
 
 300 iterations at 0.01 learning rate:
 

@@ -1,5 +1,5 @@
-![image1](Images/pneumonia_cover.jpg)
 # Classifying Pneumonia
+![image1](Images/pneumonia_cover.jpg)
 
 # Overview
 Chest x-ray images gathered from Guangzhou Women and Children’s Medical Center are used to create a machine learning model that helps identify the precense of pneumonia in a patient. These images have been resized and vectorized to be the input for two models. A logistic regression model and a central neural network model were used to create classifications of patients and their well-being. These models would be evaluated based on accuracy. The resulting model would be able to correctly identify pneumonia in a chest x-ray with 79% accuracy.
@@ -139,7 +139,7 @@ This tool may ultimately aid in expediting the diagnosis and referral of these t
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./Pneumonia_Classifier.ipynb) or review this [Presentation](./Pneumonia_Classifier.pdf).
+See the full analysis in the [Jupyter Notebook](./Pneumonia_Classifier.ipynb), [Jupyter Notebook PDF](./Pneumonia_Classifier.pdf) or review this [Presentation](./Pneumonia_Classifier_Presentation.pdf).
 
 For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb92@gmail.com).
 

@@ -130,7 +130,7 @@ The addition of any of these features will improve our model’s classification 
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./Pneumonia_Classification.ipynb) or review this [Presentation](./pneumonia_classification.pdf).
+See the full analysis in the [Jupyter Notebook](./Pneumonia_Classifier.ipynb) or review this [Presentation](./Pneumonia_Classifier.pdf).
 
 For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb92@gmail.com).
 

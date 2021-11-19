@@ -5,9 +5,9 @@
 Chest x-ray images gathered from Guangzhou Women and Children’s Medical Center are used to create a machine learning model that helps identify the precense of pneumonia in a patient. These images have been resized and vectorized to be the input for two models. A logistic regression model and a central neural network model were used to create classifications of patients and their well-being. These models would be evaluated based on accuracy. The resulting model would be able to correctly identify pneumonia in a chest x-ray with 79% accuracy.
 
 # Business Problem
-Doctors have many methods to detect the precense of infections but not all are conclusive. Pneumonia is an infection in the lungs that affects millions every year and can be identified through chest x-rays. While chest x-rays are useful ways to identify pneumonia, the indicators of the infection can be difficult to spot. Doctors also tend to numerous patients and may need to prioritize one over another. A tool to help classify which patients are not afflicted with pneumonia would help doctors focus on those who need urgent care
+Doctors have many methods to detect the precense of infections but not all are conclusive. Pneumonia is an infection in the lungs that affects millions every year and can be identified through chest x-rays. While chest x-rays are useful ways to identify pneumonia, the indicators of the infection can be difficult to spot. Doctors also tend to numerous patients and may need to prioritize one over another. A tool to help classify which patients may not be afflicted with pneumonia would help doctors focus on those who may be infected with pneumonia.
 
-A machine learning model that accepts chest x-rays as inputs can be trained to identify patterns of pneumonia and classify patients into two categories: ‘have pneumonia’ or ‘does not have pneumonia
+A machine learning model that accepts chest x-rays as inputs can be trained to identify patterns of pneumonia and classify patients into two categories: ‘likely to have pneumonia’ or ‘unlikely to have pneumonia'.
 
 # Data Understanding 
 
@@ -40,7 +40,7 @@ We set the pool_size = (2, 2) and strides = 2.
 
 The next layer flattens the image, meaning transforming our data into a 1D array, scaling the RGB values.
 
-The first Dense layer is the number of neurons that will predict upon the flattened 1D array. This layer is extremely important as its job is to condense a large amount of information into the number of neurons we defince, in this case '128''. We give it an activation function, 'relu' before adding another Dense layer of size 2 with activation 'sigmoid'.
+The first Dense layer is the number of neurons that will predict upon the flattened 1D array. This layer is extremely important as its job is to condense a large amount of information into the number of neurons we defince, in this case '128'. We give it an activation function, 'relu' before adding another Dense layer of size 2 with activation 'sigmoid'.
 
 Accuracy Metrics:
 
@@ -69,13 +69,15 @@ We seem to have been in underfitting our model, but there is still a large overf
 
 For our first test, we used 500 iterations with a learning rate of 0.01.
 
+![image3](Images/code.png)
+
 Metrics:
 
 Train: 95%
 
 Test: 87.5%
 
-With a difference of 7.5%, between our train and test, overfitting is a problem with our model. Lets see if we can reduce that.
+With a difference of 7.5%, between our train and test, overfitting is a problem with our model. Let's see if we can reduce that.
 
 300 iterations at 0.01 learning rate:
 
@@ -128,18 +130,17 @@ The addition of any of these features will improve our model’s classification 
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./pneumonia_classification.ipynb) or review this [Presentation](./pneumonia_classification.pdf).
+See the full analysis in the [Jupyter Notebook](./Pneumonia_Classifier.ipynb) or review this [Presentation](./Pneumonia_Classifier.pdf).
 
-For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb@gmail.com).
+For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb92@gmail.com).
 
 ## Repository Structure
 
-You are in the README.md right now. If you want to take a look at our Jupyter Notebook, go to the 'pneumonia_classification.ipynb' to find our data science steps for you to replicate! The 'data' folder contains the train/test/val datasets we used to train and validate our model. The 'images' folder contains the images used within this README. We hope you find our research informative!
+You are in the README.md right now. If you want to take a look at our Jupyter Notebook, go to the 'pneumonia_classification.ipynb' to find our data science steps for you to replicate! The 'data' folder contains the train/test/val datasets we used to train and validate our model. The 'chest_xray' folder contains the images used within this README. We hope you find our research informative!
 ```                              
-├── data
+├── chest_xray
 ├── images
 ├── .gitignore
 ├── pneumonia_classification.ipynb
-├── pneumonia_classification.pdf
 ├── pneumonia_classification.pdf
 └── README.md

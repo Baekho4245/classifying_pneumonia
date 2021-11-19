@@ -130,9 +130,9 @@ The addition of any of these features will improve our model’s classification 
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./pneumonia_classification.ipynb) or review this [Presentation](./pneumonia_classification.pdf).
+See the full analysis in the [Jupyter Notebook](./Pneumonia_Classification.ipynb) or review this [Presentation](./pneumonia_classification.pdf).
 
-For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb@gmail.com).
+For additional info contact [Michael Lee](mailto:baekho5767@gmail.com), [Noble Tang](mailto:nobletang@gmail.com), and [Jakub Rybicki](mailto:jakubryb92@gmail.com).
 
 ## Repository Structure
 
@@ -142,6 +142,5 @@ You are in the README.md right now. If you want to take a look at our Jupyter No
 ├── images
 ├── .gitignore
 ├── pneumonia_classification.ipynb
-├── pneumonia_classification.pdf
 ├── pneumonia_classification.pdf
 └── README.md

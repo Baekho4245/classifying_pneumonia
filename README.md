@@ -133,7 +133,7 @@ Due to the similiar metrics, we decided to choose the Logistic Regression model 
 
 Do note that our model is 79% accurate, meaning it should NOT replace a doctor's diagnosis, but rather to use in tandem with a doctor's opinion.
 
-An implication of this use is the potential for a pneumonia positive patient to have to wait longer for treatment due to being labeled as a false negative. This could prove to be costly as a bacterial pneumonia infection could cause severe damage.
+An implication of this use is the potential for a pneumonia positive patient to have to wait longer for treatment due to being labeled as a false negative. This could prove to be costly as a bacterial pneumonia infection could cause severe damage or even death.
 
 This tool may ultimately aid in expediting the diagnosis and referral of these treatable conditions, thereby facilitating earlier treatment, resulting in improved clinical outcomes.
 

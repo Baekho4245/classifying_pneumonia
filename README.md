@@ -118,15 +118,22 @@ We focused on maximizing the accuracy metric since we are creating a tool to pri
 
 This tool may ultimately aid in expediting the diagnosis and referral of these treatable conditions, thereby facilitating earlier treatment, resulting in improved clinical outcomes.
 
-# Data Limitaions and Conclusions
-
-Because the images we used to train our model on is a general x-ray images labeled 'PNEUMONIA' and 'NORMAL', we do not have additional data about the patient. For example, if the patient has a pre-existing condition, how long they had pneumonia for, if they ever had pneumonia but recoverd, etc. 
+# Data Limitations
+Because the images we used to train our model on is a general x-ray images labeled 'PNEUMONIA' and 'NORMAL', we do not have additional data about the patient. For example, if the patient has a pre-existing condition, how long they had pneumonia for, if they ever had pneumonia but recoverd, etc.
 
 Images with a higher resolution will also help train our model to decipher pneumonia better.
 
 Lastly, because our sample was limited to children ages 1-5 obtained from Ghangzhou, China, collecting samples from different geographical locations would be an important step.
 
-The addition of any of these features will improve our model’s classification accuracy
+The addition of any of these features will improve our model’s classification accuracy.
+
+# Conclusion
+
+Due to the similiar metrics, we decided to choose the Logistic Regression model as our final model. Logistic Regression is much simplier to interpret and explain versus a blackbox model such as the Multi-Layer-Perceptron model. Especially in a medical field where explainability holds heavy value.
+
+Do note that our model is 79% accurate, meaning it should NOT replace a doctor's diagnosis, but rather to use in tandem with a doctor's opinion.
+
+This tool may ultimately aid in expediting the diagnosis and referral of these treatable conditions, thereby facilitating earlier treatment, resulting in improved clinical outcomes.
 
 ## For More Information
 

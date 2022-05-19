@@ -1,4 +1,4 @@
-# Classifying Pneumoni
+# Classifying Pneumonia
 ![image1](Images/pneumonia_cover.jpg)
 
 # Overview
